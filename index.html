@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Darko Ilov" />
+    <meta name="description" content="Academy" />
+    <meta
+      name="keywords"
+      content="programiranje, dizajn, marketing, data science"
+    />
+    <title>Brainster</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-default bg-color border0 margin0">
+        <div class="container-fluid navs">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              onclick="openNav()"
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar icon1"></span>
+              <span class="icon-bar icon2"></span>
+              <span class="icon-bar icon3"></span>
+            </button>
+            <a class="navbar-brand logo" href="index.html"
+              ><img src="assets/images/Brainster-Logo-031.png" alt=""
+            /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse nav1"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="https://marketpreneurs.brainster.co/"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li>
+                <a href="http://codepreneurs.co/">Академија за програмирање</a>
+              </li>
+              <li>
+                <a href="https://datascience.brainster.co/"
+                  >Академија за data science</a
+                >
+              </li>
+              <li>
+                <a href="https://design.brainster.co/">Академија за дизајн</a>
+              </li>
+              <li>
+                <a href="form.html" class="btn bg-red nav-btn"
+                  >Вработи наш студент</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+          <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >×</a
+            >
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="https://marketpreneurs.brainster.co/"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li>
+                <a href="http://codepreneurs.co/">Академија за програмирање</a>
+              </li>
+              <li>
+                <a href="https://datascience.brainster.co/"
+                  >Академија за data science</a
+                >
+              </li>
+              <li>
+                <a href="https://design.brainster.co/">Академија за дизајн</a>
+              </li>
+              <li>
+                <a href="form.html" class="btn bg-red nav-btn"
+                  >Вработи наш студент</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      <div class="row margin0">
+        <div class="col-md-12 padding0">
+          <div class="bg-img">
+            <h1 class="white bold">Brainster Labs</h1>
+          </div>
+        </div>
+      </div>
+      <div id="myBtnContainer">
+        <div class="row margin0">
+          <div class="col-md-4 filters">
+            <button
+              class="btn active width100 border-radius0 filters"
+              onclick="filterSelection('marketing')"
+            >
+              <p>Проекти на студенти по академијата за маркетинг</p>
+              <i class="fa fa-check-circle"></i>
+            </button>
+          </div>
+          <div class="col-md-4 filters">
+            <button
+              class="btn width100 active border-radius0"
+              onclick="filterSelection('programiranje')"
+            >
+              <p>Проекти на студенти по академијата за програмирање</p>
+              <i class="fa fa-check-circle"></i>
+            </button>
+          </div>
+          <div class="col-md-4 filters">
+            <button
+              class="btn width100 active border-radius0"
+              onclick="filterSelection('dizajn')"
+            >
+              <p>Проекти на студенти по академијата за дизајн</p>
+              <i class="fa fa-check-circle"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container all">
+          <h2 class="center bold margin30">Проекти</h2>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="filterDiv marketing">
+                <div class="thumbnail">
+                  <img src="assets/images/11.jpg" />
+                  <div class="caption">
+                    <p class="text-left">Академија за маркетинг</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="filterDiv marketing">
+                <div class="thumbnail">
+                  <img src="assets/images/12.jpg" alt="..." />
+                  <div class="caption">
+                    <p class="text-left">Академија за маркетинг</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="filterDiv marketing">
+                <div class="thumbnail">
+                  <img src="assets/images/13.jpg" alt="..." />
+                  <div class="caption">
+                    <p class="text-left">Академија за маркетинг</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="filterDiv marketing">
+                <div class="thumbnail">
+                  <img src="assets/images/14.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за маркетинг</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="filterDiv marketing">
+                <div class="thumbnail">
+                  <img src="assets/images/15.webp" class="images" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за маркетинг</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="filterDiv marketing">
+                <div class="thumbnail">
+                  <img src="assets/images/16.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за маркетинг</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/1.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/2.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/3.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/4.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/5.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/10.png" alt="..." />
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/7.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/8.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/9.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv programiranje">
+                <div class="thumbnail">
+                  <img src="assets/images/6.jpg" alt="..." />
+                  <div class="caption">
+                    <p class="text-left">Академија за програмирање</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv dizajn">
+                <div class="thumbnail">
+                  <img src="assets/images/17.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за дизајн</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv dizajn">
+                <div class="thumbnail">
+                  <img src="assets/images/18.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за дизајн</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 content">
+              <div class="filterDiv dizajn">
+                <div class="thumbnail">
+                  <img src="assets/images/19.jpg" alt="..." />
+
+                  <div class="caption">
+                    <p class="text-left">Академија за дизајн</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 content">
+              <div class="filterDiv dizajn">
+                <div class="thumbnail">
+                  <img src="assets/images/20.jpg" alt="..." />
+                  <div class="caption">
+                    <p class="text-left">Академија за дизајн</p>
+                    <h4>Име на проектот стои овде во две линии</h4>
+                    <p>
+                      Краток опис во кој студентите ќе можат да опишат за што се
+                      работи во проектот
+                    </p>
+                    <small class="small">Април - Октомври 2019</small>
+                    <p class="text-right">
+                      <a href="#" class="btn btn-filter" role="button"
+                        >Дознај повеќе</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="load-button" id="loadMore">Load more</a>
+
+    <footer>
+      <p class="center margin0">
+        Изработено со <span>&#10084;</span> од студентите на Brainster
+      </p>
+    </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "100%";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

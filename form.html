@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Darko Ilov" />
+    <meta name="description" content="Academy" />
+    <meta
+      name="keywords"
+      content="programiranje, dizajn, marketing, data science"
+    />
+    <title>Brainster</title>
+    <link
+      href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/css/bootstrap-select.min.css"
+    />
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  ​
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-default bg-color border0 margin0">
+        <div class="container-fluid navs navs-form">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              onclick="openNav()"
+              type="button"
+              class="navbar-toggle collapsed margin0"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar icon1"></span>
+              <span class="icon-bar icon2"></span>
+              <span class="icon-bar icon3"></span>
+            </button>
+            <a class="navbar-brand logo" href="index.html"
+              ><img src="assets/images/Brainster-Logo-031.png" alt=""
+            /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse nav1"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav" id="nav-form">
+              <li>
+                <a href="https://marketpreneurs.brainster.co/"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li>
+                <a href="http://codepreneurs.co/">Академија за програмирање</a>
+              </li>
+              <li>
+                <a href="https://datascience.brainster.co/"
+                  >Академија за data science</a
+                >
+              </li>
+              <li>
+                <a href="https://design.brainster.co/">Академија за дизајн</a>
+              </li>
+              <li>
+                <a href="form.html" class="btn bg-red nav-btn"
+                  >Вработи наш студент</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+          <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >×</a
+            >
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="https://marketpreneurs.brainster.co/"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li>
+                <a href="http://codepreneurs.co/">Академија за програмирање</a>
+              </li>
+              <li>
+                <a href="https://datascience.brainster.co/"
+                  >Академија за data science</a
+                >
+              </li>
+              <li>
+                <a href="https://design.brainster.co/">Академија за дизајн</a>
+              </li>
+              <li>
+                <a href="form.html" class="btn bg-red nav-btn"
+                  >Вработи наш студент</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      <h1 class="center form1">Вработи студенти</h1>
+      <div class="row margin0">
+        <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+          <form>
+            <div class="row">
+              <div class="col-md-5 col-md-offset-1 col-sm-5">
+                <div class="form-group">
+                  <label for="exampleInputName">Име и презиме</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    class="form-control italic"
+                    id="exampleInputName"
+                    placeholder="Вашето име и презиме"
+                  />
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-5">
+                <div class="form-group">
+                  <label for="exampleInputCompany">Име на компанија</label>
+                  <input
+                    type="text"
+                    name="adress"
+                    required
+                    class="form-control italic"
+                    id="exampleInputCompany"
+                    placeholder="Име на вашата компанија"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-md-offset-1 col-sm-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail">Контакт имејл</label>
+                  <input
+                    type="email"
+                    name="contact"
+                    required
+                    class="form-control italic"
+                    id="exampleInputEmail"
+                    placeholder="Контакт имејл на вашата компанија"
+                  />
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-5">
+                <div class="form-group">
+                  <label for="exampleInputNumber">Контакт телефон</label>
+                  <input
+                    type="number"
+                    name="mobile"
+                    required
+                    class="form-control italic"
+                    id="exampleInputNumber"
+                    placeholder="Контакт телефон на вашата компанија"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-md-offset-1 col-sm-5">
+                <label>Tип на студенти</label>
+                <select
+                  class="selectpicker  show-menu-arrow form-control"
+                  id="select"
+                  required
+                  title="Изберете тип на студент"
+                >
+                  <option value="Успешно вработување на студенти од маркетинг"
+                    >Студенти од маркетинг</option
+                  >
+                  <option
+                    value="Успешно вработување на студенти од програмирање"
+                    >Студенти од програмирање</option
+                  >
+                  <option
+                    value="Успешно вработување на студенти од data science"
+                    >Студенти од data science</option
+                  >
+                  <option value="Успешно вработување на студенти од дизајн"
+                    >Студенти од дизајн</option
+                  >
+                </select>
+              </div>
+
+              <div class="col-md-5 col-sm-5">
+                <button
+                  type="submit"
+                  id="id1"
+                  class="btn btn-default width100 form-btn"
+                  onclick="GetSelectedValue()"
+                >
+                  ИСПРАТИ
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="form-footer">
+      <p class="center margin0">
+        Изработено со <span>&#10084;</span> од студентите на Brainster
+      </p>
+    </footer>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "100%";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
+  </body>
+</html>
